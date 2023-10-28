@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>portfolio</title>
+    <style>
+body{
+    font-family: Arial, Serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+}
+header
+{
+    background-color: rgb(238, 241, 5);
+    color: rgb(240, 38, 38);
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+.header-content h1
+{
+    font-size: 2.5rem;
+}
+.profile-picture
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+nav
+{
+    background-color:blueviolet;
+    color:brown;
+    text-align: center;
+}
+nav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li
+{
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li
+{
+    text-decoration: none;
+    color:black;
+}
+.section-content
+{
+    background-color: rgb(245, 239, 239);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+    text-align: justify;
+}
+.download-button
+{
+    background-color: rgb(55, 224, 188);
+    color:rgb(87, 87, 94);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.download-butten:hover
+{
+    background-color: rgb(66, 70, 70);
+}
+footer
+{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(197, 197, 204);
+    color: blue;
+}
+ul
+{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class= "header-content">
+            <!-- Add profile here-->
+            <img src="sanjay.jpg" alt="your profile-picture"class="profile-picture">
+        <h1>B.sanjaykumar</h1>
+</div>
+</header>
+<nav>
+    <ul>
+     <li><a href="#about">About</a></li>
+     <li><a href="#education">Education</a></li>
+     <li><a href="#Skill">Skill</a></li>
+     <li><a href="#project">Project</a></li>
+     <li><a href="#resume">Resume</a></li>
+   </ul>
+</nav>
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p> I'm B.sunjaykumar I have completed my schooling at goverment higher secondary school.Now I am studying  B.SC computer science in Bharat Ratna Dr.A P J Abdul kalam goverment arts and science college for Rameswaram.My long time goal to work in it proffesion.My short goal to find a good job.I love her music.In my school days I acheived in sports like cricket.I have known four language tamil , english ,malayalam , hindhi.iam quick leaner and kind person.  </p>
+</div>
+</section>
+<section id="education">
+    <div class="section-content">
+        <h2>education</h2>
+        <p>Alagappa University - B.SC computer science</p>
+    </div>
+</section>
+<section id="skill">
+    <div class="section-content">
+        <h2>skill</h2>
+        <ul>
+            <li>python</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine learning</li>
+            <li>Deep learning</li>
+            <li>Programing</li>
+        </ul>
+    </div>
+</section>
+<section id="project">
+    <div class="section-content">
+        <h2>project</h2>
+        <ul>
+            <li><a href="#">project 1</a></li>
+            <li><a href="#">project 2</a></li>
+       </ul>
+    </div>
+</section>
+<section id="resume">
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="https://drive.google.com/file/d/1YI7qjSdOrTVEHFYPyK-KpAN9NhnvTls2/view?usp=drive_link"
+             class="download-button"> Download CV</a>
+            </center>
+        </div>
+</section>
+<footer>
+    <p>&copy; 2023 Sanjaykumar</p>
+</footer>
+<script>
+      //smooth scrolling to section
+      document.queryselectionAll('a[href^="#"]').forEach(anchor=>{
+            anchor.addEventListener('click', function(e){
+                e.preventDefault();
+
+                const targetID = this.getAttribute('half').substring(1);
+                const targetElement = document.getElementByID(targetID);
+
+                if (targetElement){
+                    window.scrollTo({
+                        top: targetElement.offisetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        </script>
+        </body>
+        </html>
